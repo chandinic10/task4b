@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=STIX+Two+Math&display=swap');
+* {
+  box-sizing: border-box;
+}
+.bg-image{
+  background-image: url("img/bg.jpg");
+ position:fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: -1000;
+ height: 100%;
+ -webkit-filter: blur(4px);
+ -moz-filter: blur(4px);
+ -o-filter: blur(4px);
+ -ms-filter: blur(4px);
+ filter: blur(4px);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.content{
+  position: relative;
+  top: -40px;
+}
+.logo img{
+  position: relative;
+  top: 50px;
+  height: 40px;
+  width: 40px;
+  left: 20px;
+}
+.logo p{
+  font-size: 28px;
+  position: relative;
+  font-family: 'DM Serif Display', serif;
+  top: 10px;
+  left: 70px;
+  color: #A3D8F4;
+  opacity: 20;
+}
+.heading{
+  position: relative;
+  color: #F6F7D4;
+  opacity: 20;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  top: 70px;
+  font-size: 42px;
+}
+.row1, .row2, .row3{
+   display: grid;
+   grid-gap: 100px;
+   margin-top: 1vh;
+   justify-content: center;
+   width: 100%;
+}
+.row1{
+  margin-top: 20vh;
+  grid-template-columns: repeat(3,auto);
+}
+.row2{
+    grid-template-columns: repeat(2,auto);
+    width: 100%;
+    height: 100%;
+}
+.four iframe, .five iframe{
+  width: 200%;
+  height: 100.2%;
+}
+.row3{
+    grid-template-columns: repeat(1,auto);
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+@media screen and (max-width:640px) {
+  .content{
+    width: 50%;
+  }
+  .row1, .row2, .row3{
+    position: relative;
+    top: 70px;
+  }
+  .heading{
+    font-size: 18px;
+  }
+  .row1{
+    position: relative;
+    left: 10px;
+  }
+  .one iframe, .two iframe, .three iframe{
+    position: relative;
+    top: -100px;
+    height: 60%;
+    width: 190%;
+  }
+  .three{
+    position: relative;
+    right: 50px;
+  }
+  .two{
+    position: relative;
+    right: 25px;
+  }
+  .four iframe, .five iframe{
+    position: relative;
+    top: -160px;
+    height: 57%;
+    width: 75%;
+  }
+  .four{
+    position: relative;
+    left: 60px;
+  }
+  .five{
+    position: relative;
+    right: 30px;
+  }
+  .six iframe{
+    position: relative;
+    width: 30%;
+    height: 60%;
+    top: -220px;
+    left: 100px;
+  }
+}
